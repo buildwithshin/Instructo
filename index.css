@@ -382,7 +382,6 @@
 
 /* Resources Styling */
 
-/* Resources Styling */
 .resources {
     padding: 2rem;
     text-align: center;
@@ -458,34 +457,39 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 1200px) {
+
+/* For larger screens (Laptop, Desktop) */
+@media (min-width: 1025px) {
     .resources-card-group {
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .resources-card {
-        width: 30%; /* Adjust width for tablet/medium screens */
+        width: 30%; /* 3 grid columns for larger devices */
     }
 }
 
+/* For tablet and smaller devices */
 @media (max-width: 1024px) {
     .resources-card {
-        width: 30%; /* 3 grid columns for laptops */
+        width: 30%; /* 3 grid columns for tablets */
         margin-top: 1rem;
     }
 }
 
+/* For medium devices (Mobile devices and larger phones) */
 @media (max-width: 768px) {
     .resources-card {
-        width: 100%;
+        width: 100%; /* 1 grid column for mobile devices */
         max-width: 90%;
         margin-top: 1rem;
     }
 }
 
+/* For small mobile devices */
 @media (max-width: 480px) {
     .resources-card {
-        max-width: 100%;
+        width: 100%; /* Ensuring full width on mobile */
         margin-top: 1rem;
     }
 }
