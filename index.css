@@ -1,0 +1,755 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Onest;
+}
+
+
+/* Navbar Page Styling */
+
+.nav-item a {
+    color: #102E50 !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navbar-logo {
+    max-height: 40px;
+    height: auto;
+    width: auto;
+}
+
+@media (min-width: 768px) {
+    .navbar-logo {
+        max-height: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-logo {
+        max-height: 60px;
+    }
+}
+
+
+/* Introduction Page Styling */
+
+
+.landing-page {
+    position: relative;
+    height: 100vh;
+    background-image: url('./images/landing.png'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    color: black;
+    max-width: 80%;
+}
+
+/* .text-overlay {
+    position: relative;
+    padding: 20px;
+    background: rgba(255, 252, 243, 0.6);
+    border-radius: 10px;
+} */
+
+.text-overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.text-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.text-overlay .btn {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.text-overlay .btn:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 1024px) {
+    .text-overlay h1 {
+        font-size: 2.5rem;
+    }
+
+    .text-overlay p {
+        font-size: 1rem;
+    }
+
+    .text-overlay .btn {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .text-overlay p {
+        font-size: 0.9rem;
+    }
+
+    .text-overlay .btn {
+        padding: 8px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-overlay p {
+        font-size: 0.85rem;
+    }
+
+    .text-overlay .btn {
+        padding: 6px 12px;
+    }
+}
+
+
+/* Featured Page Styling */
+
+
+.featured-courses-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.featured-courses-title {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #003366; /* Dark Blue */
+}
+
+.featured-courses-description {
+    font-size: 1.2rem;
+    color: #666; /* Gray */
+    margin-bottom: 1.5rem;
+}   
+
+/* Card Group */
+.card-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.card {
+    width: 100%;
+    max-width: 320px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+    background-color: #f7f7f7;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.card-text small {
+    color: #999;
+}
+
+/* Button */
+.btn {
+    background-color: #FFD700; /* Gold */
+    color: #003366;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #c59d00;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .card-group {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
+
+/* Categories */
+
+.professors-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.professors-heading {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #003366; /* Dark Blue */
+}
+
+.professors-description {
+    font-size: 1.2rem;
+    color: #666; /* Gray */
+    margin-bottom: 1.5rem;
+}   
+
+/* Professors Card Group */
+.professors-card-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.professors-card {
+    width: 100%;
+    max-width: 320px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.professors-card:hover {
+    transform: translateY(-5px);
+}
+
+.professors-card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.professors-card-body {
+    padding: 1rem;
+    background-color: #f7f7f7;
+}
+
+.professors-card-title {
+    font-size: 1.2rem;
+    color: #003366; /* Blue */
+    margin-bottom: 1rem;
+}
+
+.professors-card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.professors-card-text small {
+    color: #999;
+}
+
+/* Social Links */
+.professors-social-icons {
+    margin-top: 10px;
+}
+
+.professors-social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #003366; /* Blue */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.professors-social-icons a:hover {
+    text-decoration: underline;
+}
+
+/* Button (Optional) */
+.professors-btn {
+    background-color: #FFD700; /* Gold */
+    color: #003366;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.professors-btn:hover {
+    background-color: #c59d00;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .professors-card-group {
+        justify-content: center;
+    }
+
+    .professors-card {
+        width: 45%; /* Adjust width for tablet/medium screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .professors-card {
+        width: 30%; /* 3 grid columns for laptops */
+    }
+}
+
+@media (max-width: 768px) {
+    .professors-card {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .professors-card {
+        max-width: 100%;
+    }
+}
+
+
+/* Resources Styling */
+
+/* Resources Styling */
+.resources {
+    padding: 2rem;
+    text-align: center;
+}
+
+.resources .section-title {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #003366; /* Blue */
+}
+
+.resources .section-description {
+    font-size: 1.2rem;
+    color: #666; /* Gray */
+    margin-bottom: 1.5rem;
+}
+
+/* Resources Card Group */
+.resources-card-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Spacing between cards */
+}
+
+/* Resources Card */
+.resources-card {
+    width: 100%;
+    max-width: 320px; /* Limit card width */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.resources-card:hover {
+    transform: translateY(-5px);
+}
+
+.resources-card-body {
+    padding: 1rem;
+    background-color: #f7f7f7;
+}
+
+.resources-card-title {
+    font-size: 1.2rem;
+    color: #003366; /* Blue */
+    margin-bottom: 1rem;
+}
+
+.resources-card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Button Styling */
+.resources-btn {
+    background-color: #FFD700; /* Gold */
+    color: #003366;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.resources-btn:hover {
+    background-color: #c59d00;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .resources-card-group {
+        justify-content: center;
+    }
+
+    .resources-card {
+        width: 30%; /* Adjust width for tablet/medium screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .resources-card {
+        width: 30%; /* 3 grid columns for laptops */
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .resources-card {
+        width: 100%;
+        max-width: 90%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .resources-card {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+
+/* About Styling */
+
+
+.about-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-heading {
+    font-size: 2.5rem;
+    color: #003366; /* Blue */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.about-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    margin-bottom: 20px;
+}
+
+.card-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.about-card h3 {
+    font-size: 1.5rem;
+    color: #003366; /* Blue */
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .about-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-heading {
+        font-size: 2rem;
+    }
+    .about-card h3 {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* Contacts */
+
+
+.contact-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    color: #003366; /* Blue */
+}
+
+.contact-heading {
+    font-size: 2.5rem;
+    color: #FFD700; /* Gold */
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    color: #003366; /* Blue */
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 90%;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    color: #003366; /* Blue */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #003366; /* Blue */
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #FFD700; /* Gold */
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); /* Gold glow */
+}
+
+.contact-form button.submit-btn {
+    background-color: #FFD700; /* Gold */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button.submit-btn:hover {
+    background-color: #003366; /* Blue */
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-heading {
+        font-size: 2rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-heading {
+        font-size: 1.8rem;
+    }
+
+    .contact-description {
+        font-size: 0.9rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+
+/* Footer styling */
+.footer {
+  background-color: #003366; /* Blue background */
+  color: #FFD700; /* Gold text */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-right ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-right li {
+  margin-left: 20px;
+}
+
+.footer-right a {
+  color: #FFD700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+  color: #003366; /* Blue on hover */
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right ul {
+    flex-direction: column;
+  }
+
+  .footer-right li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-left p {
+    font-size: 14px;
+  }
+
+  .footer-right a {
+    font-size: 14px;
+  }
+}
